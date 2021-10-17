@@ -13,8 +13,7 @@ const weatherData = (address, callback) => {
                 temperature: body.main.temp, //temp in the moment
                 description: body.weather[0].description, //fog, clear sky
                 cityName: body.name,
-								weatherImg: body.weather[0].main,
-								iconCode:body.weather[0].icon
+				weatherImg: body.weather[0].main
             })
         }
     })

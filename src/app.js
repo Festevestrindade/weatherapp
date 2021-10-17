@@ -35,7 +35,7 @@ app.get('/weather', (req, res) =>{ //localhost:3000/weather?address=city
         })
     }
 
-    weatherData(address, (error, {temperature, description, cityName, weatherImg, iconCode} = {}) => {
+    weatherData(address, (error, {temperature, description, cityName, weatherImg} = {}) => {
         if(error) {
             return res.send({
                 error
@@ -46,8 +46,7 @@ app.get('/weather', (req, res) =>{ //localhost:3000/weather?address=city
             temperature,
             description,
             cityName,
-						weatherImg,
-						iconCode
+			weatherImg
         })
     })
 });//fetch data weather 

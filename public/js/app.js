@@ -31,11 +31,9 @@ weatherForm.addEventListener('submit', (event) => {
                 weatherCondition.textContent = "";
             } else {
                 console.log()
-                if(data.description === "rain" || data.description === "fog") {
-                    weatherIcon.className = "wi wi-day-" + data.description
-                } else {
-                    weatherIcon.className = "wi wi-day-sunny"
-                }
+
+                document.getElementById("weatherImg").src="../img/" + data.weatherImg + ".svg";        
+                
                 locationElement.textContent = data.cityName;
                 tempElement.textContent = (data.temperature - 273.5).toFixed(0) + String.fromCharCode(176);
                 weatherCondition.textContent = data.description.toUpperCase();

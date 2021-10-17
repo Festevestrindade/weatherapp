@@ -8,7 +8,13 @@
     <div class="main-content">
         {{>header}}
         <article class="widget">
-            <div class="weatherIcon"><i class="wi wi-day-sunny"></i></div>
+            <form class="weatherLocation">
+                <input class="inputLocation" placeholder="location..." type="text" /><button>Search</button>
+            </form>
+            <div class="weatherIcon">
+                <img id="weatherImg" class="iconCode" src="img/forecast.svg" alt="weather icon">
+            </div>
+            <div></div>
             <div class="weatherInfo">
                 <div class="temperature"><span></span></div>
                 <div class="description">
@@ -16,10 +22,7 @@
                     <div class="place"></div>
                 </div>
             </div>
-            <div class="date"></div>
-            <form class="weatherLocation">
-                <input class="inputLocation" placeholder="location..." type="text" /><button>Search</button>
-            </form>			
+            <div class="date"></div>			
         </article>
     </div>
     <script src="js/app.js"></script> 
