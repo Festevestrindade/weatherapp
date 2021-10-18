@@ -2,29 +2,33 @@
 <html>
 <head>
     <title>{{title}}</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
 </head>
 <body>
     <div class="main-content">
         {{>header}}
         <article class="widget">
             <form class="weatherLocation">
-                <input class="inputLocation" placeholder="location..." type="text" /><button>Search</button>
+                <input class="inputLocation" placeholder="Insert a location..." type="text" /><button>Search</button>
             </form>
             <div class="weatherIcon">
                 <img id="weatherImg" class="iconCode" src="img/forecast.svg" alt="weather icon">
             </div>
-            <div></div>
+            <div class="backdiv"><div class="weatherCondition"></div></div>
             <div class="weatherInfo">
                 <div class="temperature"><span></span></div>
                 <div class="description">
-                    <div class="weatherCondition"></div>
                     <div class="place"></div>
                 </div>
             </div>
             <div class="date"></div>			
         </article>
     </div>
+    <div></div>
+    {{>footer}}
     <script src="js/app.js"></script> 
 </body>
 </html>

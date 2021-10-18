@@ -14,37 +14,30 @@ body {
 }
 
 header {
-  margin-top: 16px;
-  margin-bottom: 48px;
-}
-
-h2 {
-  font-size: 64px;
-  margin-bottom: 16px;
+  text-align: center;
+  margin: 40px 0 50px 0;
 }
 
 .iconCode{
-height: 3em;
+  height: 17em;
 }
 
 .widget {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   display: flex;
-  height: 300px;
-  width: 600px;
-  transform: translate(-50%, -50%);
+  height: 18em;
   flex-wrap: wrap;
-  cursor: pointer;
   border-radius: 20px;
 }
 .inputLocation{
-    padding: 20px;
-    height: 50px;
-    width: 400px;
-    border: none;
-    background-color:#57a7b617;
+  padding: 20px;
+  height: 50px;
+  width: 400px;
+  font-size: 20px;
+  border: none;
+  background-color:#57a7b617;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .weatherLocation{
@@ -58,25 +51,36 @@ height: 3em;
   background: #2f4977;
   color:#fff;
   border: 1px solid transparent;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .weatherLocation input:focus{
   outline: 0 none;
 }
 
-.widget .weatherIcon {
+.weatherIcon {
   flex: 1 100%;
-  height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background: #2f74770d;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  font-size: 100px;
 }
 
-.widget .weatherInfo {
-  flex: 0 0 70%;
+.weatherCondition{
+  flex: 1 100%;
+  text-align: center;
+  margin: 36px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.backdiv{
+  flex: 100%;
+  background-color: #2f74770d;
+}
+
+.weatherInfo {
+  flex: 50%;
   height: 40%;
   background: #397289;
   border-bottom-left-radius: 20px;
@@ -84,14 +88,14 @@ height: 3em;
   align-items: center;
   color: white;
 }
-.widget .weatherInfo .temperature {
+.temperature {
   flex: 0 0 40%;
   width: 100%;
   font-size: 35px;
   display: flex;
   justify-content: space-around;
 }
-.widget .weatherInfo .description {
+.description {
   flex: 0 60%;
   display: flex;
   flex-direction: column;
@@ -99,17 +103,13 @@ height: 3em;
   height: 100%;
   justify-content: center;
 }
-.widget .weatherInfo .description .weatherCondition {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 100;
+
+.place {
+  font-size: 25px;
+  padding: 10px;
 }
-.widget .weatherInfo .description .place {
-  font-size: 15px;
-	padding: 10px;
-}
-.widget .date {
-  flex: 0 0 30%;
+.date {
+  flex: 50%;
   height: 40%;
   background: #57a7b6;
   border-bottom-right-radius: 20px;
@@ -129,4 +129,56 @@ p a {
   text-decoration: none;
   color: #E4D6A7;
   font-size: 10px;
+}
+
+footer{
+  margin-top: auto;
+}
+
+
+@media only screen 
+and (min-device-width: 300px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+body {
+  max-width: 750px;
+}
+.inputLocation{
+  border-radius: 0px;
+ }
+
+.weatherLocation button{
+
+ border-bottom-right-radius: 0px;
+  border-top-right-radius:  0px;
+}
+
+.iconCode{
+  height: 21em;
+}
+.weatherCondition{
+  font-size: 35px;
+}
+
+.weatherInfo{
+  border-bottom-left-radius: 0px;
+  flex: 100%;
+}
+.temperature{
+  flex: auto;
+  text-align: center;
+}
+.description{
+  flex: auto;
+  text-align: center;
+}
+.date{
+  flex: 100%;
+  border-bottom-right-radius: 0px;
+}
+.place{
+  font-size: 30px;
+}
+
+
 }

@@ -20,7 +20,7 @@ dateElement.textContent = new Date().getDate() + ", " + monthNames[new Date().ge
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault();
     locationElement.textContent = "Loading...";
-    tempElement.textContent = "";
+    tempElement.textContent = ""; 
     weatherCondition.textContent = "";
     const locationApi = fetchWeather + "?address=" + search.value;
     fetch(locationApi).then(response => {
@@ -31,12 +31,37 @@ weatherForm.addEventListener('submit', (event) => {
                 weatherCondition.textContent = "";
             } else {
                 console.log()
-
-                document.getElementById("weatherImg").src="../img/" + data.weatherImg + ".svg";        
-                
+                document.getElementById("weatherImg").src="../img/" + data.weatherImg + ".svg";
+                document.getElementById("weatherImg").alt= "icon -" + data.weatherImg;        
                 locationElement.textContent = data.cityName;
                 tempElement.textContent = (data.temperature - 273.5).toFixed(0) + String.fromCharCode(176);
                 weatherCondition.textContent = data.description.toUpperCase();
+
+                // if (locationElement) {
+                //     .textContent =
+                // }
+                // locationElement.addEventListener('input', city => {
+
+                // } )
+                // const saveToLocalStorage = () => {
+                //     localStorage.setItem ('.place')
+                // }
+
+                const localStorageContent = localStorage.getItem('temp');
+
+                let temp;
+                if(localStorageContent === null) {
+                    temp = [];
+                } else {
+                    temp = JSON.parse (localStorageContent);
+                }
+
+                console.log();
+
+                temp.push(tempElement.textContent);
+                temp.push(locationElement.textContent);
+                temp.push(weatherCondition.textContent);
+                localStorage.setItem('temp', JSON.stringify (temp) );
             }
         }) 
     });
