@@ -212,5 +212,9 @@ body {
   font-size: 30px;
 }
 
+.btn-del {
+height: 4em;
+font-size: 22px;
+}
 
 }
