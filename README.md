@@ -8,6 +8,7 @@
 
 ![weather-app](public/img/weather-app.gif)
 
+
 [Weather App - Demo](https://nodejs-weather-app.herokuapp.com/)
 
 ## Built With
@@ -53,6 +54,7 @@ $ npm start
 
 ```
 Now open your browser and visit: localhost:3000 or simply click here 
+
 [localhost:3000](http://localhost:3000/)
 
 ### Run tests in Cypress
@@ -73,7 +75,7 @@ $ npx cypress run --record --key -insertkeyhere
 
 **Francisco Esteves Trindade**
 
-- GitHub: [@zenott](https://github.com/Festevestrindade)
+- GitHub: [@FestevesTrindade](https://github.com/Festevestrindade)
 - Email: [festevestrindaded@gmail.com](mailto:festevestrindaded@gmail.com)
 
 ## Contributing
