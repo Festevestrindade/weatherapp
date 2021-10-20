@@ -53,6 +53,7 @@ header {
   border: 1px solid transparent;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  font-size: 18px;
 }
 .weatherLocation input:focus{
   outline: 0 none;
@@ -133,6 +134,7 @@ header {
   cursor: pointer;
   border-radius: 0.2em;
   outline: none;
+  font-size: 18px;
 }
 
 #localStorageDiv{
@@ -177,10 +179,12 @@ body {
 }
 .inputLocation{
   border-radius: 0px;
+  font-size: 22px;
+  width:550px;
  }
 
 .weatherLocation button{
-
+  font-size: 22px;
  border-bottom-right-radius: 0px;
   border-top-right-radius:  0px;
 }
