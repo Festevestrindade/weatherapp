@@ -7,6 +7,7 @@
 ## Live Demo
 
 ![weather-app](public/img/weather-app.gif)
+
 [Weather App - Demo](https://nodejs-weather-app.herokuapp.com/)
 
 ## Built With
@@ -50,10 +51,9 @@ Start development server
 ```
 $ npm start
 
+```
 Now open your browser and visit: localhost:3000 or simply click here 
 [localhost:3000](http://localhost:3000/)
-
-```
 
 ### Run tests in Cypress
 
