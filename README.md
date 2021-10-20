@@ -53,7 +53,7 @@ Start development server
 $ npm start
 
 ```
-Now open your browser and visit: localhost:3000 or simply click here 
+Now open your browser and visit: localhost:3000 or simply click here: 
 
 [localhost:3000](http://localhost:3000/)
 
