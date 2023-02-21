@@ -9,7 +9,7 @@
 ![weather-app](public/img/weather-app.gif)
 
 
-[Weather App - Demo](https://nodejs-weather-app.herokuapp.com/)
+[Weather App - Demo](https://thisisawetherapp.herokuapp.com/)
 
 ## Built With
 
